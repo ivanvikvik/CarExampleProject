@@ -17,26 +17,25 @@ public:
 	}
 
 	// constructor with params #1 - конструктор c параметрами
-	Car(string initBrand, string initModel) {
-		brand = initBrand;
-		model = initModel;
+	Car(string brand, string model) {
+		this->brand = brand;
+		this->model = model;
 		age = 0;
 		price = 0;
 	}
 
 	// constructor with params #2 - конструктор c параметрами
-	Car(string initBrand, string initModel, int initAge, double initPrice) {
-		brand = initBrand;
-		model = initModel;
-		age = initAge;
-		price = initPrice;
+	Car(string brand, string model, int age, double price) {
+		this->brand = brand;
+		this->model = model;
+		this->age = age;
+		this->price = price;
 	}
 
 	// destructor - деструктор
 	~Car() {
 
 	}
-
 
 	string getInfo() {
 		return "Car: brand = " + brand
