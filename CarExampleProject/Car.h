@@ -7,73 +7,24 @@ private:
 	string model;
 	int age;
 	double price;
+
 public:
-	// default constructor - конструктор по умолчанию
-	Car() {
-		brand = "no brand";
-		model = "no model";
-		age = 0;
-		price = 0;
-	}
+	Car();
+	Car(string brand, string model);
+	Car(string brand, string model, int age, double price);
+	~Car();
 
-	// constructor with params #1 - конструктор c параметрами
-	Car(string brand, string model) {
-		this->brand = brand;
-		this->model = model;
-		age = 0;
-		price = 0;
-	}
+	string getBrand();
+	void setBrand(string brand);
 
-	// constructor with params #2 - конструктор c параметрами
-	Car(string brand, string model, int age, double price) {
-		this->brand = brand;
-		this->model = model;
-		this->age = age;
-		this->price = price;
-	}
+	string getModel();
+	void setModel(string model);
 
-	// destructor - деструктор
-	~Car() {
+	int getAge();
+	void setAge(int age);
 
-	}
+	double getPrice();
+	void setPrice(double price);
 
-	string getBrand() {
-		return brand;
-	}
-
-	void setBrand(string brand) {
-		this->brand = brand;
-	}
-
-	string getModel() {
-		return model;
-	}
-
-	void setModel(string model) {
-		this->model = model;
-	}
-
-	int getAge(){
-		return age;
-	}
-
-	void setAge(int age) {
-		this->age = age;
-	}
-
-	double getPrice() {
-		return price;
-	}
-
-	void setPrice(double price) {
-		this->price = price;
-	}
-
-
-	string getInfo() {
-		return "Car: brand = " + brand
-			+ "; model = " + model
-			+ "; age = " + to_string(age)
-			+ "; price = " + to_string(price);
-	}
+	string getInfo();
 };
