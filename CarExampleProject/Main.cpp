@@ -1,4 +1,4 @@
-#include "Car.h"
+п»ї#include "Car.h"
 
 int main(void) {
 	string brand, model;
@@ -7,27 +7,27 @@ int main(void) {
 
 	Car car1;
 
-	// введите марку автопроизводителя
+	// РІРІРµРґРёС‚Рµ РјР°СЂРєСѓ Р°РІС‚РѕРїСЂРѕРёР·РІРѕРґРёС‚РµР»СЏ
 	cout << "Input brand of your car: ";
 	cin >> brand;
 	car1.setBrand(brand);
 
-	// введите модель вашего автомобиля
+	// РІРІРµРґРёС‚Рµ РјРѕРґРµР»СЊ РІР°С€РµРіРѕ Р°РІС‚РѕРјРѕР±РёР»СЏ
 	cout << "Input model of your car: ";
 	cin >> model;
 	car1.setModel(model);
 
-	// введите возраст вашего автомобиля
+	// РІРІРµРґРёС‚Рµ РІРѕР·СЂР°СЃС‚ РІР°С€РµРіРѕ Р°РІС‚РѕРјРѕР±РёР»СЏ
 	cout << "Input age of your car: ";
 	cin >> age;
 	car1.setAge(age);
 
-	// введите стоимость вашего автомобиля
+	// РІРІРµРґРёС‚Рµ СЃС‚РѕРёРјРѕСЃС‚СЊ РІР°С€РµРіРѕ Р°РІС‚РѕРјРѕР±РёР»СЏ
 	cout << "Input price of your car: ";
 	cin >> price;
 	car1.setPrice(price);
 	
-	// информация о вашем автомобиле
+	// РёРЅС„РѕСЂРјР°С†РёСЏ Рѕ РІР°С€РµРј Р°РІС‚РѕРјРѕР±РёР»Рµ
 	cout << "\nInfo about your car:" << endl;
 	cout << car1.getInfo() << endl;
 

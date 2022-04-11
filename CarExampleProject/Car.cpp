@@ -1,6 +1,6 @@
-#include "Car.h"
+п»ї#include "Car.h"
 
-// default constructor - конструктор по умолчанию
+// default constructor - РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
 Car::Car() {
 	brand = "no brand";
 	model = "no model";
@@ -8,7 +8,7 @@ Car::Car() {
 	price = 0;
 }
 
-// constructor with params #1 - конструктор c параметрами
+// constructor with params #1 - РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ c РїР°СЂР°РјРµС‚СЂР°РјРё
 Car::Car(string brand, string model) {
 	this->brand = brand;
 	this->model = model;
@@ -16,7 +16,7 @@ Car::Car(string brand, string model) {
 	price = 0;
 }
 
-// constructor with params #2 - конструктор c параметрами
+// constructor with params #2 - РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ c РїР°СЂР°РјРµС‚СЂР°РјРё
 Car::Car(string brand, string model, int age, double price) {
 	this->brand = brand;
 	this->model = model;
@@ -24,7 +24,7 @@ Car::Car(string brand, string model, int age, double price) {
 	this->price = price;
 }
 
-// destructor - деструктор
+// destructor - РґРµСЃС‚СЂСѓРєС‚РѕСЂ
 Car::~Car() {
 
 }
