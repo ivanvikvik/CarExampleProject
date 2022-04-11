@@ -2,12 +2,12 @@
 #include "Header.h"
 
 class Car {
-public:
+private:
 	string brand;
 	string model;
 	int age;
 	double price;
-
+public:
 	// default constructor - конструктор по умолчанию
 	Car() {
 		brand = "no brand";
@@ -36,6 +36,39 @@ public:
 	~Car() {
 
 	}
+
+	string getBrand() {
+		return brand;
+	}
+
+	void setBrand(string brand) {
+		this->brand = brand;
+	}
+
+	string getModel() {
+		return model;
+	}
+
+	void setModel(string model) {
+		this->model = model;
+	}
+
+	int getAge(){
+		return age;
+	}
+
+	void setAge(int age) {
+		this->age = age;
+	}
+
+	double getPrice() {
+		return price;
+	}
+
+	void setPrice(double price) {
+		this->price = price;
+	}
+
 
 	string getInfo() {
 		return "Car: brand = " + brand
